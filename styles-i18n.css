@@ -1,0 +1,60 @@
+/* ===========================
+   Language Selector Styles
+   =========================== */
+
+#language-selector {
+    padding: 8px 12px;
+    margin-left: 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 2px solid #ff6b35;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#language-selector:hover {
+    background-color: #ff6b35;
+    color: #1a1a1a;
+}
+
+#language-selector option {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* RTL Support for Hebrew */
+html[dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+}
+
+html[dir="rtl"] .navbar-container {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .nav-menu {
+    text-align: right;
+}
+
+html[dir="rtl"] #language-selector {
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+html[dir="rtl"] .social-links {
+    justify-content: flex-end;
+}
+
+html[dir="rtl"] .categories-nav {
+    flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .video-grid {
+    direction: rtl;
+}
+
+html[lang="he"] body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
